@@ -20,7 +20,7 @@ public class ImageToTextService {
 
     private final MapperToDto mapperToDto;
 
-    private MyUrlInfo myUrlInfo;
+    private final MyUrlInfo myUrlInfo;
 
     @Autowired
     public ImageToTextService(MapperToDto mapperToDto, MyUrlInfo myUrlInfo) {
