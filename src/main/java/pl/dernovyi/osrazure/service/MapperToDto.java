@@ -9,6 +9,7 @@ import java.util.List;
 
 @Service
 public class MapperToDto {
+
     public ImageDto toDto(ResponseEntity<ResponsePicture> exchange){
 
         exchange.getBody().getLanguage();
