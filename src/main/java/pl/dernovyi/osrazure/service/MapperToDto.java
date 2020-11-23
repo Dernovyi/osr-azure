@@ -20,8 +20,11 @@ public class MapperToDto {
                         .forEach(text -> t.append(text.getText() + " "))));
 
        ImageDto answer = new ImageDto();
-
-       answer.setText(t.toString());
+        if(t.length()<3){
+           answer.setText("We can't read this file");
+        }else{
+            answer.setText(t.toString());
+        }
        String language = exchange.getBody().getLanguage();
        answer.setLanguage(Language.valueOf(language));
        return answer;
