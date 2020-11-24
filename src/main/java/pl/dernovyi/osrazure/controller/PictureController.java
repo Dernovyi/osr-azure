@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/picture")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://osr-angular.herokuapp.com")
 public class PictureController {
     private final ImageToTextService textService;
     private final ImageValidator imageValidator;
