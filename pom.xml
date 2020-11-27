@@ -13,11 +13,9 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>osr-azure</name>
     <description>OSR</description>
-
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -26,6 +24,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-storage</artifactId>
+            <version>8.4.0</version>
         </dependency>
 
         <dependency>
@@ -47,7 +50,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -58,5 +60,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

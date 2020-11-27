@@ -18,6 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/picture")
 @CrossOrigin(origins = "https://osr-angular.herokuapp.com")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class PictureController {
     private final ImageToTextService textService;
     private final ImageValidator imageValidator;
@@ -44,7 +45,7 @@ public class PictureController {
         if(imageDto!=null){
             return new ResponseEntity<>(imageDto,HttpStatus.OK);
         }
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(HttpStatus.CONFLICT);
     }
 
     @PutMapping

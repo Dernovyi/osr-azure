@@ -37,6 +37,7 @@ public class ServiceImages {
     public ImageDto saveImage(ImageDto imageDto){
        return repository.save(imageDto);
     }
+
     public ImageDto saveNewImage(RequestPicture image) {
         if (validate.validate(image.getUrl())) {
             if(!isPresentURL(image.getUrl())){
